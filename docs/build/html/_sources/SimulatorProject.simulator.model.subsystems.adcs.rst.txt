@@ -1,0 +1,29 @@
+SimulatorProject.simulator.model.subsystems.adcs package
+========================================================
+
+Submodules
+----------
+
+SimulatorProject.simulator.model.subsystems.adcs.AdcsConfig module
+------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.adcs.AdcsConfig
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.model.subsystems.adcs.AdcsSubsystem module
+---------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.adcs.AdcsSubsystem
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.adcs
+   :members:
+   :show-inheritance:
+   :undoc-members:

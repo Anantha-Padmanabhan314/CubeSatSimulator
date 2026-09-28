@@ -1,0 +1,38 @@
+SimulatorProject.simulator package
+==================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   SimulatorProject.simulator.model
+   SimulatorProject.simulator.ui
+
+Submodules
+----------
+
+SimulatorProject.simulator.Message module
+-----------------------------------------
+
+.. automodule:: SimulatorProject.simulator.Message
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.main module
+--------------------------------------
+
+.. automodule:: SimulatorProject.simulator.main
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: SimulatorProject.simulator
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,125 @@
+SimulatorProject.simulator.ui package
+=====================================
+
+Submodules
+----------
+
+SimulatorProject.simulator.ui.AttitudePanel module
+--------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.AttitudePanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.ConfigFileChooser module
+------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.ConfigFileChooser
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.ControlAndStatusPanel module
+----------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.ControlAndStatusPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.GlobePanel module
+-----------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.GlobePanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.GroundPanel module
+------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.GroundPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.GroundTrackPanel module
+-----------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.GroundTrackPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.LogPanel module
+---------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.LogPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.MainDisplayPanel module
+-----------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.MainDisplayPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.MplCanvas module
+----------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.MplCanvas
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.NotesPanel module
+-----------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.NotesPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.SatnogsPanel module
+-------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.SatnogsPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.SpacecraftPanel module
+----------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.SpacecraftPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.StationMap module
+-----------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.StationMap
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.ui.SubsystemPanel module
+---------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.ui.SubsystemPanel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: SimulatorProject.simulator.ui
+   :members:
+   :show-inheritance:
+   :undoc-members:

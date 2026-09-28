@@ -1,0 +1,34 @@
+SimulatorProject.simulator.model.subsystems package
+===================================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   SimulatorProject.simulator.model.subsystems.adcs
+   SimulatorProject.simulator.model.subsystems.comms
+   SimulatorProject.simulator.model.subsystems.eps
+   SimulatorProject.simulator.model.subsystems.ground
+   SimulatorProject.simulator.model.subsystems.payload
+   SimulatorProject.simulator.model.subsystems.structure
+
+Submodules
+----------
+
+SimulatorProject.simulator.model.subsystems.Subsystem module
+------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.Subsystem
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,29 @@
+SimulatorProject.simulator.model.subsystems.structure package
+=============================================================
+
+Submodules
+----------
+
+SimulatorProject.simulator.model.subsystems.structure.StructureConfig module
+----------------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.structure.StructureConfig
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.model.subsystems.structure.StructureSubsystem module
+-------------------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.structure.StructureSubsystem
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.structure
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,29 @@
+SimulatorProject.simulator.model.subsystems.comms package
+=========================================================
+
+Submodules
+----------
+
+SimulatorProject.simulator.model.subsystems.comms.CommsConfig module
+--------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.comms.CommsConfig
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.model.subsystems.comms.CommsSubsystem module
+-----------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.comms.CommsSubsystem
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.comms
+   :members:
+   :show-inheritance:
+   :undoc-members:

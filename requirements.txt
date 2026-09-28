@@ -1,0 +1,13 @@
+numpy
+jpype1==1.5.0
+PySide6==6.9.3
+pyvista
+pyvistaqt
+PySpice
+Cartopy
+QtPy==2.4.3
+certifi
+Markdown
+requests
+scipy
+matplotlib

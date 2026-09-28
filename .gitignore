@@ -1,0 +1,24 @@
+# Virtual environment 
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Test cache
+.pytest_cache/
+
+# Simulation output
+output.csv
+
+# Java crash logs
+hs_err_pid*.log
+
+# Editor and IDE settings
+.idea/
+.vscode/
+
+# OS clutter
+.DS_Store
+Thumbs.db

@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>simulator package &#8212; CubesatSimulator 1.0 RC1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=a1e301f4"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'simulator';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="simulator.model package" href="simulator.model.html" />
+    <link rel="prev" title="SimulatorProject" href="modules.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">CubesatSimulator 1.0 RC1 documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="modules.html">
+    SimulatorProject
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="modules.html">
+    SimulatorProject
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">simulator package</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="simulator.model.html">simulator.model package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.subsystems.html">simulator.model.subsystems package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.AttitudePropagator.html">simulator.model.AttitudePropagator module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.CubeSat.html">simulator.model.CubeSat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.DataStore.html">simulator.model.DataStore module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.IlluminationCalculator.html">simulator.model.IlluminationCalculator module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.JvmUtilities.html">simulator.model.JvmUtilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.ModelConfig.html">simulator.model.ModelConfig module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.ModelController.html">simulator.model.ModelController module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.SimulationStepHandler.html">simulator.model.SimulationStepHandler module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.Utilities.html">simulator.model.Utilities module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="simulator.ui.html">simulator.ui package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.AttitudePanel.html">simulator.ui.AttitudePanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.ConfigFileChooser.html">simulator.ui.ConfigFileChooser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.ControlAndStatusPanel.html">simulator.ui.ControlAndStatusPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.GlobePanel.html">simulator.ui.GlobePanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.GroundPanel.html">simulator.ui.GroundPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.GroundTrackPanel.html">simulator.ui.GroundTrackPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.LogPanel.html">simulator.ui.LogPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.MainDisplayPanel.html">simulator.ui.MainDisplayPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.MplCanvas.html">simulator.ui.MplCanvas module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.NotesPanel.html">simulator.ui.NotesPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.SatnogsPanel.html">simulator.ui.SatnogsPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.SpacecraftPanel.html">simulator.ui.SpacecraftPanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.StationMap.html">simulator.ui.StationMap module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.SubsystemPanel.html">simulator.ui.SubsystemPanel module</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.Message.html">simulator.Message module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.main.html">simulator.main module</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="modules.html" class="nav-link">SimulatorProject</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">simulator package</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-simulator">
+<span id="simulator-package"></span><h1>simulator package<a class="headerlink" href="#module-simulator" title="Link to this heading">#</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="simulator.model.html">simulator.model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="simulator.model.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.subsystems.html">simulator.model.subsystems package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.subsystems.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.subsystems.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.model.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.AttitudePropagator.html">simulator.model.AttitudePropagator module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.AttitudePropagator.html#simulator.model.AttitudePropagator.AttitudePropagator"><code class="docutils literal notranslate"><span class="pre">AttitudePropagator</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.AttitudePropagator.html#simulator.model.AttitudePropagator.body_to_lvlh_orekit"><code class="docutils literal notranslate"><span class="pre">body_to_lvlh_orekit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.AttitudePropagator.html#simulator.model.AttitudePropagator.rotmat_from_quat"><code class="docutils literal notranslate"><span class="pre">rotmat_from_quat()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.AttitudePropagator.html#simulator.model.AttitudePropagator.rotmat_to_quat"><code class="docutils literal notranslate"><span class="pre">rotmat_to_quat()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.AttitudePropagator.html#simulator.model.AttitudePropagator.rotmat_to_rpy"><code class="docutils literal notranslate"><span class="pre">rotmat_to_rpy()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.CubeSat.html">simulator.model.CubeSat module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.CubeSat.html#simulator.model.CubeSat.CubeSat"><code class="docutils literal notranslate"><span class="pre">CubeSat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.DataStore.html">simulator.model.DataStore module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.DataStore.html#simulator.model.DataStore.DataStore"><code class="docutils literal notranslate"><span class="pre">DataStore</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.DataStore.html#simulator.model.DataStore.SpacecraftDataType"><code class="docutils literal notranslate"><span class="pre">SpacecraftDataType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.DataStore.html#simulator.model.DataStore.TimeDataType"><code class="docutils literal notranslate"><span class="pre">TimeDataType</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.IlluminationCalculator.html">simulator.model.IlluminationCalculator module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.IlluminationCalculator.html#simulator.model.IlluminationCalculator.IlluminationCalculator"><code class="docutils literal notranslate"><span class="pre">IlluminationCalculator</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.JvmUtilities.html">simulator.model.JvmUtilities module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.JvmUtilities.html#simulator.model.JvmUtilities.init_orekit"><code class="docutils literal notranslate"><span class="pre">init_orekit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.JvmUtilities.html#simulator.model.JvmUtilities.start_jvm"><code class="docutils literal notranslate"><span class="pre">start_jvm()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.ModelConfig.html">simulator.model.ModelConfig module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.ModelConfig.html#simulator.model.ModelConfig.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.ModelConfig.html#simulator.model.ModelConfig.ConfigType"><code class="docutils literal notranslate"><span class="pre">ConfigType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.ModelConfig.html#simulator.model.ModelConfig.NotesType"><code class="docutils literal notranslate"><span class="pre">NotesType</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.ModelConfig.html#simulator.model.ModelConfig.get_default_config"><code class="docutils literal notranslate"><span class="pre">get_default_config()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.ModelController.html">simulator.model.ModelController module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.ModelController.html#simulator.model.ModelController.run_simulator"><code class="docutils literal notranslate"><span class="pre">run_simulator()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.SimulationStepHandler.html">simulator.model.SimulationStepHandler module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.SimulationStepHandler.html#simulator.model.SimulationStepHandler.to_array"><code class="docutils literal notranslate"><span class="pre">to_array()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.model.Utilities.html">simulator.model.Utilities module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.Utilities.html#simulator.model.Utilities.omega_matrix"><code class="docutils literal notranslate"><span class="pre">omega_matrix()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.Utilities.html#simulator.model.Utilities.parse_date"><code class="docutils literal notranslate"><span class="pre">parse_date()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.Utilities.html#simulator.model.Utilities.quat_to_euler"><code class="docutils literal notranslate"><span class="pre">quat_to_euler()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.Utilities.html#simulator.model.Utilities.quat_to_rotmat"><code class="docutils literal notranslate"><span class="pre">quat_to_rotmat()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.model.Utilities.html#simulator.model.Utilities.to_array"><code class="docutils literal notranslate"><span class="pre">to_array()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="simulator.ui.html">simulator.ui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="simulator.ui.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.AttitudePanel.html">simulator.ui.AttitudePanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.AttitudePanel.html#simulator.ui.AttitudePanel.AttitudePanel"><code class="docutils literal notranslate"><span class="pre">AttitudePanel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.AttitudePanel.html#simulator.ui.AttitudePanel.SliderLabels"><code class="docutils literal notranslate"><span class="pre">SliderLabels</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.ConfigFileChooser.html">simulator.ui.ConfigFileChooser module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.ConfigFileChooser.html#simulator.ui.ConfigFileChooser.ConfigFileChooser"><code class="docutils literal notranslate"><span class="pre">ConfigFileChooser</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.ControlAndStatusPanel.html">simulator.ui.ControlAndStatusPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.ControlAndStatusPanel.html#simulator.ui.ControlAndStatusPanel.ControlAndStatusPanel"><code class="docutils literal notranslate"><span class="pre">ControlAndStatusPanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.GlobePanel.html">simulator.ui.GlobePanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.GlobePanel.html#simulator.ui.GlobePanel.GlobePanel"><code class="docutils literal notranslate"><span class="pre">GlobePanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.GroundPanel.html">simulator.ui.GroundPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.GroundPanel.html#simulator.ui.GroundPanel.GroundPanel"><code class="docutils literal notranslate"><span class="pre">GroundPanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.GroundTrackPanel.html">simulator.ui.GroundTrackPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.GroundTrackPanel.html#simulator.ui.GroundTrackPanel.GroundTrackPanel"><code class="docutils literal notranslate"><span class="pre">GroundTrackPanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.LogPanel.html">simulator.ui.LogPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.LogPanel.html#simulator.ui.LogPanel.LogPanel"><code class="docutils literal notranslate"><span class="pre">LogPanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.MainDisplayPanel.html">simulator.ui.MainDisplayPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.MainDisplayPanel.html#simulator.ui.MainDisplayPanel.MainDisplayPanel"><code class="docutils literal notranslate"><span class="pre">MainDisplayPanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.MplCanvas.html">simulator.ui.MplCanvas module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.MplCanvas.html#simulator.ui.MplCanvas.MplCanvas"><code class="docutils literal notranslate"><span class="pre">MplCanvas</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.MplCanvas.html#simulator.ui.MplCanvas.MplPlotWidget"><code class="docutils literal notranslate"><span class="pre">MplPlotWidget</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.NotesPanel.html">simulator.ui.NotesPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.NotesPanel.html#simulator.ui.NotesPanel.NotesPanel"><code class="docutils literal notranslate"><span class="pre">NotesPanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.SatnogsPanel.html">simulator.ui.SatnogsPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.ImageCache"><code class="docutils literal notranslate"><span class="pre">ImageCache</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.ImageFetchRunnable"><code class="docutils literal notranslate"><span class="pre">ImageFetchRunnable</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.ImageSignals"><code class="docutils literal notranslate"><span class="pre">ImageSignals</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.SatNOGSPanel"><code class="docutils literal notranslate"><span class="pre">SatNOGSPanel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.StationDelegate"><code class="docutils literal notranslate"><span class="pre">StationDelegate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.StationListModel"><code class="docutils literal notranslate"><span class="pre">StationListModel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.StationListView"><code class="docutils literal notranslate"><span class="pre">StationListView</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SatnogsPanel.html#simulator.ui.SatnogsPanel.fetch_json"><code class="docutils literal notranslate"><span class="pre">fetch_json()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.SpacecraftPanel.html">simulator.ui.SpacecraftPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SpacecraftPanel.html#simulator.ui.SpacecraftPanel.SpacecraftPanel"><code class="docutils literal notranslate"><span class="pre">SpacecraftPanel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.StationMap.html">simulator.ui.StationMap module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.StationMap.html#simulator.ui.StationMap.StationMap"><code class="docutils literal notranslate"><span class="pre">StationMap</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.ui.SubsystemPanel.html">simulator.ui.SubsystemPanel module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="simulator.ui.SubsystemPanel.html#simulator.ui.SubsystemPanel.SubsystemPanel"><code class="docutils literal notranslate"><span class="pre">SubsystemPanel</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="simulator.Message.html">simulator.Message module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="simulator.Message.html#simulator.Message.Message"><code class="docutils literal notranslate"><span class="pre">Message</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.Message.html#simulator.Message.MessageType"><code class="docutils literal notranslate"><span class="pre">MessageType</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="simulator.Message.html#simulator.Message.MessageType.CMD_SHUTDOWN_SIMULATOR"><code class="docutils literal notranslate"><span class="pre">MessageType.CMD_SHUTDOWN_SIMULATOR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.Message.html#simulator.Message.MessageType.CMD_START_SIMULATION"><code class="docutils literal notranslate"><span class="pre">MessageType.CMD_START_SIMULATION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.Message.html#simulator.Message.MessageType.STATUS_LOG_MESSAGE"><code class="docutils literal notranslate"><span class="pre">MessageType.STATUS_LOG_MESSAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.Message.html#simulator.Message.MessageType.STATUS_SIMULATION_COMPLETE"><code class="docutils literal notranslate"><span class="pre">MessageType.STATUS_SIMULATION_COMPLETE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.Message.html#simulator.Message.MessageType.STATUS_SIMULATION_UPDATE"><code class="docutils literal notranslate"><span class="pre">MessageType.STATUS_SIMULATION_UPDATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.Message.html#simulator.Message.MessageType.STATUS_SIMULATOR_SHUTDOWN"><code class="docutils literal notranslate"><span class="pre">MessageType.STATUS_SIMULATOR_SHUTDOWN</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="simulator.main.html">simulator.main module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="simulator.main.html#simulator.main.MainWindow"><code class="docutils literal notranslate"><span class="pre">MainWindow</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="simulator.main.html#simulator.main.MainWindow.check_queue"><code class="docutils literal notranslate"><span class="pre">MainWindow.check_queue()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.main.html#simulator.main.MainWindow.closeEvent"><code class="docutils literal notranslate"><span class="pre">MainWindow.closeEvent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="simulator.main.html#simulator.main.MainWindow.handle_message"><code class="docutils literal notranslate"><span class="pre">MainWindow.handle_message()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.main.html#simulator.main.create_emoji_icon"><code class="docutils literal notranslate"><span class="pre">create_emoji_icon()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.main.html#simulator.main.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.main.html#simulator.main.run_gui_process"><code class="docutils literal notranslate"><span class="pre">run_gui_process()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.main.html#simulator.main.run_simulation_process"><code class="docutils literal notranslate"><span class="pre">run_simulation_process()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="simulator.main.html#simulator.main.set_dark_theme"><code class="docutils literal notranslate"><span class="pre">set_dark_theme()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subpackages">Subpackages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/simulator.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Adrian Payne.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

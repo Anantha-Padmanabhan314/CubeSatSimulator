@@ -1,0 +1,37 @@
+SimulatorProject.simulator.model.subsystems.payload package
+===========================================================
+
+Submodules
+----------
+
+SimulatorProject.simulator.model.subsystems.payload.PayloadConfig module
+------------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.payload.PayloadConfig
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.model.subsystems.payload.PayloadSubsystem module
+---------------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.payload.PayloadSubsystem
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+SimulatorProject.simulator.model.subsystems.payload.TetherForceModel module
+---------------------------------------------------------------------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.payload.TetherForceModel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: SimulatorProject.simulator.model.subsystems.payload
+   :members:
+   :show-inheritance:
+   :undoc-members:
