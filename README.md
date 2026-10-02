@@ -78,6 +78,8 @@ The simulator needs three things besides the code itself:
 
 Your home folder is `/Users/<name>` on macOS, `/home/<name>` on Linux and `C:\Users\<name>` on Windows. Every `.jar` in `Orekit-Jars` is loaded, so extra Hipparchus jars there are harmless.
 
+> **`IGRF.COF` needs a separate download.** The magnetic field model (used by the tether force and `CubeSat.get_mag_field()`) reads the IGRF coefficient file from `~/orekit-data/IGRF.COF`. Download the coefficient file from the [NOAA NCEI International Geomagnetic Reference Field page](https://www.ncei.noaa.gov/products/international-geomagnetic-reference-field) and save it in `~/orekit-data/` under the name `IGRF.COF`. Do this after cloning `orekit-data` in the platform steps below, and check that the file is there before your first run.
+
 Pick your platform below. Every step only has to be done once.
 
 ### 🍎 macOS
@@ -256,6 +258,7 @@ For a first check, use a short duration such as 0.1 days.
 | `No JVM shared library file (jvm.dll) found` (Windows) | Set `JAVA_HOME` as in Windows step 2, then open a new PowerShell. |
 | `FileNotFoundError` mentioning `Orekit-Jars` | The jar folder is missing or named differently. It must be `Orekit-Jars` in your home folder, with that exact capitalisation. |
 | Orekit errors about missing data, such as UTC-TAI or gravity field files | `~/orekit-data` is missing, empty, or nested one level too deep (e.g. `orekit-data/orekit-data-main/...`). |
+| Orekit errors mentioning IGRF or the geomagnetic model | `~/orekit-data/IGRF.COF` is missing. Download it from the [NOAA NCEI IGRF page](https://www.ncei.noaa.gov/products/international-geomagnetic-reference-field) and save it with that exact name. |
 | `Could not load the Qt platform plugin "xcb"` (Linux) | `sudo apt install libxcb-cursor0` |
 | `pip` fails while building `jpype1` | You're on Python 3.13. Create the virtual environment with Python 3.11 or 3.12 instead. |
 | `ModuleNotFoundError` for `PySide6`, `numpy` and so on | You're running the system Python. Use `./run.sh`, or the `.venv` Python as shown above. |
